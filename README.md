@@ -18,22 +18,16 @@
 - *en vim editando* presiona la tecla "o" y lo lleva al final del archivo y donde debes de hacer el insert de la llave copiada
 - `:qw` para guardar y salir
 - Estando ya conectados a la maquina de vagrant vamos a ejecutar los siguientes comandos para instalar paquetes necesarios `sudo apt-get update` `sudo apt-get install vim vim-nox curl git apache2 mariadb-server mariadb-client php7.4 php7.4-bcmath php7.4-curl php7.4-json php7.4-mbstring php7.4-mysql php7.4-xml`
-
-habilitar modulos de apache ver en telegran 9:14pm
-crear estructura de telegram 9:16
-con el comando telegram 9:16
-agregar servername telegram 9:21
-ver que no haya error de sintaxys telegram 9:24
-habilitar el sitio telegram 9:24
-reload a apache 
-etc/host 
-
-
-
+- Habilitar modulos de apache con el siguiente comando `sudo a2enmod vhost_alias rewrite ssl`
+- Ejecutar el siguiente comando para crear una estructura de carpetas necesaria `mkdir -p ~/sites/lfts.isw811.xyz/public`
+Agregar servername en el host local 
+- Comprobar que no hayan errores de sintaxis `sudo apache2ctl -t`
+- Habilitar el sitio `sudo a2ensite lfts.isw811.xyz.conf`
+- Reiniciamos apache2 `sudo systemctl reload apache2`
 # Comandos importantes para crecimiento personal
 
-pwd donde estoy 
-ls que hay donde estoy
-cat 
+`pwd` directorio en el que estoy
+`ls` lista de elementos que hay donde estoy
+`cat` comando de solo lectura
 
 
